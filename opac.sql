@@ -1,26 +1,26 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
--- http://www.phpmyadmin.net
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Feb 26, 2020 at 04:45 PM
--- Server version: 5.6.12-log
--- PHP Version: 5.4.16
+-- Host: 127.0.0.1
+-- Generation Time: Feb 28, 2020 at 03:24 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `opac`
 --
-CREATE DATABASE IF NOT EXISTS `opac` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `opac`;
 
 -- --------------------------------------------------------
 
@@ -28,7 +28,7 @@ USE `opac`;
 -- Table structure for table `admintable`
 --
 
-CREATE TABLE IF NOT EXISTS `admintable` (
+CREATE TABLE `admintable` (
   `Username` text NOT NULL,
   `Password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -46,18 +46,25 @@ INSERT INTO `admintable` (`Username`, `Password`) VALUES
 -- Table structure for table `book`
 --
 
-CREATE TABLE IF NOT EXISTS `book` (
-  `Call_Number` varchar(255) NOT NULL,
-  `Title` text NOT NULL,
-  `Author` text NOT NULL,
-  `Location` text NOT NULL,
-  `Published` text NOT NULL,
-  `Description` text NOT NULL,
-  `ISBN` text NOT NULL,
-  `Edition` text NOT NULL,
-  `Language` text NOT NULL,
-  `Accesssion` text NOT NULL
+CREATE TABLE `book` (
+  `bookCallNumber` varchar(255) NOT NULL,
+  `bookTitle` text NOT NULL,
+  `bookAuthor` text NOT NULL,
+  `bookLocation` text NOT NULL,
+  `bookPublished` text NOT NULL,
+  `bookISBN` text NOT NULL,
+  `bookEdition` text NOT NULL,
+  `bookLanguage` text NOT NULL,
+  `bookAccession` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `book`
+--
+
+INSERT INTO `book` (`bookCallNumber`, `bookTitle`, `bookAuthor`, `bookLocation`, `bookPublished`, `bookISBN`, `bookEdition`, `bookLanguage`, `bookAccession`) VALUES
+('', '', '', '', '', '', '', '', ''),
+('XXXXXXXXXXXXXXXXXX', 'DA BOOK', 'MEEEEEE', 'HERENBFG', 'YOUR HOUSE', '', 'EDITION ZERO', 'ASDSADASF', 'GODSDSDA');
 
 -- --------------------------------------------------------
 
@@ -65,12 +72,12 @@ CREATE TABLE IF NOT EXISTS `book` (
 -- Table structure for table `client`
 --
 
-CREATE TABLE IF NOT EXISTS `client` (
-  `ClientID` int(11) NOT NULL,
-  `FirstName` int(11) NOT NULL,
-  `LastName` int(11) NOT NULL,
-  `YearLevel` int(11) NOT NULL,
-  `Department` int(11) NOT NULL
+CREATE TABLE `client` (
+  `clientId` varchar(255) NOT NULL,
+  `clientFirstName` text NOT NULL,
+  `clientLastName` text NOT NULL,
+  `clientYearLevel` text NOT NULL,
+  `clientDepartment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -79,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `client` (
 -- Table structure for table `clientbookloan`
 --
 
-CREATE TABLE IF NOT EXISTS `clientbookloan` (
+CREATE TABLE `clientbookloan` (
   `CIDNumber` text NOT NULL,
   `IDNumber` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -90,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `clientbookloan` (
 -- Table structure for table `loan`
 --
 
-CREATE TABLE IF NOT EXISTS `loan` (
+CREATE TABLE `loan` (
   `BookID` text NOT NULL,
   `Accession` text NOT NULL,
   `Title` text NOT NULL,
@@ -98,6 +105,23 @@ CREATE TABLE IF NOT EXISTS `loan` (
   `Due` text NOT NULL,
   `OverDue` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `book`
+--
+ALTER TABLE `book`
+  ADD PRIMARY KEY (`bookCallNumber`);
+
+--
+-- Indexes for table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`clientId`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

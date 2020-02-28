@@ -27,44 +27,7 @@ Partial Class Admin
         Me.ams = New System.Windows.Forms.Label()
         Me.lsb = New System.Windows.Forms.Label()
         Me.piclsb = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LocalPanel = New System.Windows.Forms.Panel()
-        Me.TitlePanel = New System.Windows.Forms.Panel()
-        Me.PubPanel = New System.Windows.Forms.Panel()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
@@ -92,21 +55,60 @@ Partial Class Admin
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
+        Me.TitlePanel = New System.Windows.Forms.Panel()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PubPanel = New System.Windows.Forms.Panel()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.btnPrev = New System.Windows.Forms.Button()
         Me.btnNext = New System.Windows.Forms.Button()
-        Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.BtnAdd = New System.Windows.Forms.PictureBox()
         Me.btnUpdate = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnInventory = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         CType(Me.piclsb, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LocalPanel.SuspendLayout()
         Me.TitlePanel.SuspendLayout()
         Me.PubPanel.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BtnAdd, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnUpdate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnInventory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -158,17 +160,6 @@ Partial Class Admin
         Me.piclsb.TabIndex = 15
         Me.piclsb.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Khaki
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(374, 87)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(398, 432)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 16
-        Me.PictureBox1.TabStop = False
-        '
         'LocalPanel
         '
         Me.LocalPanel.BackColor = System.Drawing.Color.PaleGoldenrod
@@ -204,382 +195,6 @@ Partial Class Admin
         Me.LocalPanel.Name = "LocalPanel"
         Me.LocalPanel.Size = New System.Drawing.Size(571, 372)
         Me.LocalPanel.TabIndex = 57
-        '
-        'TitlePanel
-        '
-        Me.TitlePanel.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.TitlePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.TitlePanel.Controls.Add(Me.Label9)
-        Me.TitlePanel.Controls.Add(Me.Label8)
-        Me.TitlePanel.Controls.Add(Me.Label7)
-        Me.TitlePanel.Controls.Add(Me.Label6)
-        Me.TitlePanel.Controls.Add(Me.Label5)
-        Me.TitlePanel.Controls.Add(Me.Label4)
-        Me.TitlePanel.Controls.Add(Me.Label3)
-        Me.TitlePanel.Controls.Add(Me.Label2)
-        Me.TitlePanel.Controls.Add(Me.TextBox7)
-        Me.TitlePanel.Controls.Add(Me.TextBox6)
-        Me.TitlePanel.Controls.Add(Me.TextBox5)
-        Me.TitlePanel.Controls.Add(Me.TextBox4)
-        Me.TitlePanel.Controls.Add(Me.TextBox3)
-        Me.TitlePanel.Controls.Add(Me.TextBox2)
-        Me.TitlePanel.Controls.Add(Me.TextBox1)
-        Me.TitlePanel.Location = New System.Drawing.Point(-304, 93)
-        Me.TitlePanel.Name = "TitlePanel"
-        Me.TitlePanel.Size = New System.Drawing.Size(571, 372)
-        Me.TitlePanel.TabIndex = 74
-        '
-        'PubPanel
-        '
-        Me.PubPanel.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.PubPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PubPanel.Controls.Add(Me.TextBox16)
-        Me.PubPanel.Controls.Add(Me.Label19)
-        Me.PubPanel.Controls.Add(Me.TextBox15)
-        Me.PubPanel.Controls.Add(Me.Label18)
-        Me.PubPanel.Controls.Add(Me.Label10)
-        Me.PubPanel.Controls.Add(Me.Label11)
-        Me.PubPanel.Controls.Add(Me.Label12)
-        Me.PubPanel.Controls.Add(Me.Label13)
-        Me.PubPanel.Controls.Add(Me.Label14)
-        Me.PubPanel.Controls.Add(Me.Label15)
-        Me.PubPanel.Controls.Add(Me.Label16)
-        Me.PubPanel.Controls.Add(Me.Label17)
-        Me.PubPanel.Controls.Add(Me.TextBox8)
-        Me.PubPanel.Controls.Add(Me.TextBox9)
-        Me.PubPanel.Controls.Add(Me.TextBox10)
-        Me.PubPanel.Controls.Add(Me.TextBox11)
-        Me.PubPanel.Controls.Add(Me.TextBox12)
-        Me.PubPanel.Controls.Add(Me.TextBox13)
-        Me.PubPanel.Controls.Add(Me.TextBox14)
-        Me.PubPanel.Location = New System.Drawing.Point(868, 91)
-        Me.PubPanel.Name = "PubPanel"
-        Me.PubPanel.Size = New System.Drawing.Size(571, 372)
-        Me.PubPanel.TabIndex = 59
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(370, 157)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(132, 20)
-        Me.TextBox16.TabIndex = 33
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.Maroon
-        Me.Label19.Location = New System.Drawing.Point(294, 160)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(77, 15)
-        Me.Label19.TabIndex = 32
-        Me.Label19.Text = "Other Details"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(370, 129)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(132, 20)
-        Me.TextBox15.TabIndex = 31
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.Maroon
-        Me.Label18.Location = New System.Drawing.Point(309, 132)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(47, 15)
-        Me.Label18.TabIndex = 30
-        Me.Label18.Text = "Edition"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.ForeColor = System.Drawing.Color.Maroon
-        Me.Label10.Location = New System.Drawing.Point(1, 2)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(169, 13)
-        Me.Label10.TabIndex = 29
-        Me.Label10.Text = "Published, Descriptions, ISBN etc."
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.ForeColor = System.Drawing.Color.Maroon
-        Me.Label11.Location = New System.Drawing.Point(79, 240)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(37, 15)
-        Me.Label11.TabIndex = 27
-        Me.Label11.Text = "ISBN"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Maroon
-        Me.Label12.Location = New System.Drawing.Point(64, 212)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(64, 15)
-        Me.Label12.TabIndex = 26
-        Me.Label12.Text = "Gen. Notes"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.ForeColor = System.Drawing.Color.Maroon
-        Me.Label13.Location = New System.Drawing.Point(79, 185)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(38, 15)
-        Me.Label13.TabIndex = 25
-        Me.Label13.Text = "Series"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.Maroon
-        Me.Label14.Location = New System.Drawing.Point(59, 156)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(75, 15)
-        Me.Label14.TabIndex = 24
-        Me.Label14.Text = "Pages/Extent"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Maroon
-        Me.Label15.Location = New System.Drawing.Point(52, 128)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(88, 15)
-        Me.Label15.TabIndex = 23
-        Me.Label15.Text = "Year Published"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Maroon
-        Me.Label16.Location = New System.Drawing.Point(66, 100)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(58, 15)
-        Me.Label16.TabIndex = 22
-        Me.Label16.Text = "Publisher"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.Maroon
-        Me.Label17.Location = New System.Drawing.Point(51, 74)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(91, 15)
-        Me.Label17.TabIndex = 21
-        Me.Label17.Text = "Place Published"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(146, 239)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox8.TabIndex = 20
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(146, 211)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox9.TabIndex = 19
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(146, 183)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox10.TabIndex = 18
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(146, 155)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox11.TabIndex = 17
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(146, 127)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox12.TabIndex = 16
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(146, 99)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox13.TabIndex = 15
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(146, 71)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox14.TabIndex = 14
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.Maroon
-        Me.Label9.Location = New System.Drawing.Point(1, 2)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(191, 13)
-        Me.Label9.TabIndex = 29
-        Me.Label9.Text = "Title and Statement Responsibility Area"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.Maroon
-        Me.Label8.Location = New System.Drawing.Point(59, 240)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(76, 15)
-        Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Corp. Author"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Maroon
-        Me.Label7.Location = New System.Drawing.Point(62, 212)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(67, 15)
-        Me.Label7.TabIndex = 26
-        Me.Label7.Text = "Editors. etc"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Maroon
-        Me.Label6.Location = New System.Drawing.Point(58, 184)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(78, 15)
-        Me.Label6.TabIndex = 25
-        Me.Label6.Text = "Other Author"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Maroon
-        Me.Label5.Location = New System.Drawing.Point(59, 156)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(77, 15)
-        Me.Label5.TabIndex = 24
-        Me.Label5.Text = "Main Author"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.Maroon
-        Me.Label4.Location = New System.Drawing.Point(58, 128)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 15)
-        Me.Label4.TabIndex = 23
-        Me.Label4.Text = "Parallel Title"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(64, 100)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 15)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Other Title"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Maroon
-        Me.Label2.Location = New System.Drawing.Point(81, 74)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(32, 15)
-        Me.Label2.TabIndex = 21
-        Me.Label2.Text = "Title"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(146, 239)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox7.TabIndex = 20
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(146, 211)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox6.TabIndex = 19
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(146, 183)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox5.TabIndex = 18
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(146, 155)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox4.TabIndex = 17
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(146, 127)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox3.TabIndex = 16
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(146, 99)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox2.TabIndex = 15
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(146, 71)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(356, 20)
-        Me.TextBox1.TabIndex = 14
         '
         'CheckBox5
         '
@@ -850,9 +465,386 @@ Partial Class Admin
         Me.Label23.TabIndex = 29
         Me.Label23.Text = "Local and Other Information"
         '
+        'TitlePanel
+        '
+        Me.TitlePanel.BackColor = System.Drawing.Color.PaleGoldenrod
+        Me.TitlePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.TitlePanel.Controls.Add(Me.Label9)
+        Me.TitlePanel.Controls.Add(Me.Label8)
+        Me.TitlePanel.Controls.Add(Me.Label7)
+        Me.TitlePanel.Controls.Add(Me.Label6)
+        Me.TitlePanel.Controls.Add(Me.Label5)
+        Me.TitlePanel.Controls.Add(Me.Label4)
+        Me.TitlePanel.Controls.Add(Me.Label3)
+        Me.TitlePanel.Controls.Add(Me.Label2)
+        Me.TitlePanel.Controls.Add(Me.TextBox7)
+        Me.TitlePanel.Controls.Add(Me.TextBox6)
+        Me.TitlePanel.Controls.Add(Me.TextBox5)
+        Me.TitlePanel.Controls.Add(Me.TextBox4)
+        Me.TitlePanel.Controls.Add(Me.TextBox3)
+        Me.TitlePanel.Controls.Add(Me.TextBox2)
+        Me.TitlePanel.Controls.Add(Me.TextBox1)
+        Me.TitlePanel.Location = New System.Drawing.Point(-297, 92)
+        Me.TitlePanel.Name = "TitlePanel"
+        Me.TitlePanel.Size = New System.Drawing.Size(571, 372)
+        Me.TitlePanel.TabIndex = 74
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.Color.Maroon
+        Me.Label9.Location = New System.Drawing.Point(1, 2)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(191, 13)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "Title and Statement Responsibility Area"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Maroon
+        Me.Label8.Location = New System.Drawing.Point(59, 240)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(76, 15)
+        Me.Label8.TabIndex = 27
+        Me.Label8.Text = "Corp. Author"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Maroon
+        Me.Label7.Location = New System.Drawing.Point(62, 212)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(67, 15)
+        Me.Label7.TabIndex = 26
+        Me.Label7.Text = "Editors. etc"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Maroon
+        Me.Label6.Location = New System.Drawing.Point(58, 184)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(78, 15)
+        Me.Label6.TabIndex = 25
+        Me.Label6.Text = "Other Author"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Maroon
+        Me.Label5.Location = New System.Drawing.Point(59, 156)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(77, 15)
+        Me.Label5.TabIndex = 24
+        Me.Label5.Text = "Main Author"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Maroon
+        Me.Label4.Location = New System.Drawing.Point(58, 128)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(78, 15)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "Parallel Title"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Maroon
+        Me.Label3.Location = New System.Drawing.Point(64, 100)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 15)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Other Title"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Maroon
+        Me.Label2.Location = New System.Drawing.Point(81, 74)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(32, 15)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "Title"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(146, 239)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox7.TabIndex = 20
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(146, 211)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox6.TabIndex = 19
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(146, 183)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox5.TabIndex = 18
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(146, 155)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox4.TabIndex = 17
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(146, 127)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox3.TabIndex = 16
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(146, 99)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox2.TabIndex = 15
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(146, 71)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox1.TabIndex = 14
+        '
+        'PubPanel
+        '
+        Me.PubPanel.BackColor = System.Drawing.Color.PaleGoldenrod
+        Me.PubPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PubPanel.Controls.Add(Me.TextBox16)
+        Me.PubPanel.Controls.Add(Me.Label19)
+        Me.PubPanel.Controls.Add(Me.TextBox15)
+        Me.PubPanel.Controls.Add(Me.Label18)
+        Me.PubPanel.Controls.Add(Me.Label10)
+        Me.PubPanel.Controls.Add(Me.Label11)
+        Me.PubPanel.Controls.Add(Me.Label12)
+        Me.PubPanel.Controls.Add(Me.Label13)
+        Me.PubPanel.Controls.Add(Me.Label14)
+        Me.PubPanel.Controls.Add(Me.Label15)
+        Me.PubPanel.Controls.Add(Me.Label16)
+        Me.PubPanel.Controls.Add(Me.Label17)
+        Me.PubPanel.Controls.Add(Me.TextBox8)
+        Me.PubPanel.Controls.Add(Me.TextBox9)
+        Me.PubPanel.Controls.Add(Me.TextBox10)
+        Me.PubPanel.Controls.Add(Me.TextBox11)
+        Me.PubPanel.Controls.Add(Me.TextBox12)
+        Me.PubPanel.Controls.Add(Me.TextBox13)
+        Me.PubPanel.Controls.Add(Me.TextBox14)
+        Me.PubPanel.Location = New System.Drawing.Point(859, 92)
+        Me.PubPanel.Name = "PubPanel"
+        Me.PubPanel.Size = New System.Drawing.Size(571, 372)
+        Me.PubPanel.TabIndex = 59
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(370, 157)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(132, 20)
+        Me.TextBox16.TabIndex = 33
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.Maroon
+        Me.Label19.Location = New System.Drawing.Point(294, 160)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(77, 15)
+        Me.Label19.TabIndex = 32
+        Me.Label19.Text = "Other Details"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(370, 129)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(132, 20)
+        Me.TextBox15.TabIndex = 31
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Maroon
+        Me.Label18.Location = New System.Drawing.Point(309, 132)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(47, 15)
+        Me.Label18.TabIndex = 30
+        Me.Label18.Text = "Edition"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Maroon
+        Me.Label10.Location = New System.Drawing.Point(1, 2)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(169, 13)
+        Me.Label10.TabIndex = 29
+        Me.Label10.Text = "Published, Descriptions, ISBN etc."
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.Maroon
+        Me.Label11.Location = New System.Drawing.Point(79, 240)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(37, 15)
+        Me.Label11.TabIndex = 27
+        Me.Label11.Text = "ISBN"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.Maroon
+        Me.Label12.Location = New System.Drawing.Point(64, 212)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(64, 15)
+        Me.Label12.TabIndex = 26
+        Me.Label12.Text = "Gen. Notes"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.Maroon
+        Me.Label13.Location = New System.Drawing.Point(79, 185)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(38, 15)
+        Me.Label13.TabIndex = 25
+        Me.Label13.Text = "Series"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.Maroon
+        Me.Label14.Location = New System.Drawing.Point(59, 156)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(75, 15)
+        Me.Label14.TabIndex = 24
+        Me.Label14.Text = "Pages/Extent"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Maroon
+        Me.Label15.Location = New System.Drawing.Point(52, 128)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(88, 15)
+        Me.Label15.TabIndex = 23
+        Me.Label15.Text = "Year Published"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.Maroon
+        Me.Label16.Location = New System.Drawing.Point(66, 100)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(58, 15)
+        Me.Label16.TabIndex = 22
+        Me.Label16.Text = "Publisher"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Modern No. 20", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.Maroon
+        Me.Label17.Location = New System.Drawing.Point(51, 74)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(91, 15)
+        Me.Label17.TabIndex = 21
+        Me.Label17.Text = "Place Published"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(146, 239)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox8.TabIndex = 20
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(146, 211)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox9.TabIndex = 19
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(146, 183)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox10.TabIndex = 18
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(146, 155)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox11.TabIndex = 17
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(146, 127)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox12.TabIndex = 16
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(146, 99)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox13.TabIndex = 15
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(146, 71)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(356, 20)
+        Me.TextBox14.TabIndex = 14
+        '
         'btnPrev
         '
         Me.btnPrev.BackColor = System.Drawing.Color.PaleGoldenrod
+        Me.btnPrev.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnPrev.ForeColor = System.Drawing.Color.Maroon
         Me.btnPrev.Location = New System.Drawing.Point(282, 465)
@@ -865,6 +857,7 @@ Partial Class Admin
         'btnNext
         '
         Me.btnNext.BackColor = System.Drawing.Color.PaleGoldenrod
+        Me.btnNext.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnNext.ForeColor = System.Drawing.Color.Maroon
         Me.btnNext.Location = New System.Drawing.Point(574, 465)
@@ -884,6 +877,29 @@ Partial Class Admin
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "ADMINISTRATOR"
         '
+        'BtnAdd
+        '
+        Me.BtnAdd.BackColor = System.Drawing.Color.Khaki
+        Me.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnAdd.Image = Global.OPAC1.My.Resources.Resources.add11
+        Me.BtnAdd.Location = New System.Drawing.Point(45, 248)
+        Me.BtnAdd.Name = "BtnAdd"
+        Me.BtnAdd.Size = New System.Drawing.Size(157, 50)
+        Me.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BtnAdd.TabIndex = 75
+        Me.BtnAdd.TabStop = False
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUpdate.Image = Global.OPAC1.My.Resources.Resources.update1
+        Me.btnUpdate.Location = New System.Drawing.Point(45, 304)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(171, 50)
+        Me.btnUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnUpdate.TabIndex = 27
+        Me.btnUpdate.TabStop = False
+        '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
@@ -894,25 +910,36 @@ Partial Class Admin
         Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
         '
-        'btnUpdate
+        'PictureBox1
         '
-        Me.btnUpdate.Image = Global.OPAC1.My.Resources.Resources.update1
-        Me.btnUpdate.Location = New System.Drawing.Point(45, 277)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(171, 50)
-        Me.btnUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnUpdate.TabIndex = 27
-        Me.btnUpdate.TabStop = False
+        Me.PictureBox1.BackColor = System.Drawing.Color.Khaki
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(374, 87)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(398, 432)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 16
+        Me.PictureBox1.TabStop = False
         '
         'btnInventory
         '
+        Me.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInventory.Image = Global.OPAC1.My.Resources.Resources.inventory1
-        Me.btnInventory.Location = New System.Drawing.Point(45, 354)
+        Me.btnInventory.Location = New System.Drawing.Point(45, 360)
         Me.btnInventory.Name = "btnInventory"
         Me.btnInventory.Size = New System.Drawing.Size(157, 50)
         Me.btnInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.btnInventory.TabIndex = 28
         Me.btnInventory.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(96, 474)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(153, 23)
+        Me.Button1.TabIndex = 76
+        Me.Button1.Text = "Test Database Add"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Admin
         '
@@ -920,7 +947,8 @@ Partial Class Admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(914, 505)
-        Me.Controls.Add(Me.TitlePanel)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnAdd)
         Me.Controls.Add(Me.PubPanel)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnNext)
@@ -929,22 +957,24 @@ Partial Class Admin
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LocalPanel)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnInventory)
+        Me.Controls.Add(Me.TitlePanel)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Admin"
         Me.Text = "Admin"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.piclsb, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LocalPanel.ResumeLayout(False)
         Me.LocalPanel.PerformLayout()
         Me.TitlePanel.ResumeLayout(False)
         Me.TitlePanel.PerformLayout()
         Me.PubPanel.ResumeLayout(False)
         Me.PubPanel.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BtnAdd, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnUpdate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnInventory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -1026,9 +1056,10 @@ Partial Class Admin
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents TextBox13 As TextBox
     Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents DirectoryEntry1 As DirectoryServices.DirectoryEntry
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnUpdate As PictureBox
     Friend WithEvents btnInventory As PictureBox
+    Friend WithEvents BtnAdd As PictureBox
+    Friend WithEvents Button1 As Button
 End Class

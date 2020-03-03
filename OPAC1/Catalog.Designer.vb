@@ -23,7 +23,7 @@ Partial Class Catalog
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.CardDisplay = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -35,36 +35,40 @@ Partial Class Catalog
         Me.btnCardDisp = New System.Windows.Forms.Button()
         Me.btnTabDisp = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TabDisplay = New System.Windows.Forms.DataGridView()
+        Me.Field = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Data = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
+        Me.CardDisplay.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.TabDisplay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.CardDisplay)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(26, 73)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(736, 408)
         Me.Panel1.TabIndex = 0
         '
-        'Panel4
+        'CardDisplay
         '
-        Me.Panel4.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.Panel4.Controls.Add(Me.Label6)
-        Me.Panel4.Controls.Add(Me.Label5)
-        Me.Panel4.Controls.Add(Me.Label4)
-        Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Controls.Add(Me.Label42)
-        Me.Panel4.ForeColor = System.Drawing.Color.Maroon
-        Me.Panel4.Location = New System.Drawing.Point(3, 3)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(730, 373)
-        Me.Panel4.TabIndex = 5
+        Me.CardDisplay.BackColor = System.Drawing.Color.PaleGoldenrod
+        Me.CardDisplay.Controls.Add(Me.Label6)
+        Me.CardDisplay.Controls.Add(Me.Label5)
+        Me.CardDisplay.Controls.Add(Me.Label4)
+        Me.CardDisplay.Controls.Add(Me.Label3)
+        Me.CardDisplay.Controls.Add(Me.Label2)
+        Me.CardDisplay.Controls.Add(Me.Label1)
+        Me.CardDisplay.Controls.Add(Me.Label42)
+        Me.CardDisplay.ForeColor = System.Drawing.Color.Maroon
+        Me.CardDisplay.Location = New System.Drawing.Point(3, 3)
+        Me.CardDisplay.Name = "CardDisplay"
+        Me.CardDisplay.Size = New System.Drawing.Size(730, 373)
+        Me.CardDisplay.TabIndex = 5
         '
         'Label6
         '
@@ -166,7 +170,7 @@ Partial Class Catalog
         Me.btnCardDisp.ForeColor = System.Drawing.Color.Maroon
         Me.btnCardDisp.Location = New System.Drawing.Point(0, 0)
         Me.btnCardDisp.Name = "btnCardDisp"
-        Me.btnCardDisp.Size = New System.Drawing.Size(81, 30)
+        Me.btnCardDisp.Size = New System.Drawing.Size(355, 30)
         Me.btnCardDisp.TabIndex = 2
         Me.btnCardDisp.Text = "Card Display"
         Me.btnCardDisp.UseVisualStyleBackColor = False
@@ -175,9 +179,9 @@ Partial Class Catalog
         '
         Me.btnTabDisp.BackColor = System.Drawing.Color.PaleGoldenrod
         Me.btnTabDisp.ForeColor = System.Drawing.Color.Maroon
-        Me.btnTabDisp.Location = New System.Drawing.Point(80, 0)
+        Me.btnTabDisp.Location = New System.Drawing.Point(353, 0)
         Me.btnTabDisp.Name = "btnTabDisp"
-        Me.btnTabDisp.Size = New System.Drawing.Size(81, 30)
+        Me.btnTabDisp.Size = New System.Drawing.Size(383, 30)
         Me.btnTabDisp.TabIndex = 3
         Me.btnTabDisp.Text = "Tab Display"
         Me.btnTabDisp.UseVisualStyleBackColor = False
@@ -190,20 +194,46 @@ Partial Class Catalog
         Me.Panel3.Size = New System.Drawing.Size(914, 46)
         Me.Panel3.TabIndex = 15
         '
+        'TabDisplay
+        '
+        Me.TabDisplay.BackgroundColor = System.Drawing.Color.PaleGoldenrod
+        Me.TabDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TabDisplay.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Field, Me.Data})
+        Me.TabDisplay.Location = New System.Drawing.Point(768, 76)
+        Me.TabDisplay.Name = "TabDisplay"
+        Me.TabDisplay.Size = New System.Drawing.Size(730, 373)
+        Me.TabDisplay.TabIndex = 0
+        '
+        'Field
+        '
+        Me.Field.HeaderText = "Field"
+        Me.Field.Name = "Field"
+        Me.Field.ReadOnly = True
+        Me.Field.Width = 200
+        '
+        'Data
+        '
+        Me.Data.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Data.HeaderText = "Data"
+        Me.Data.Name = "Data"
+        Me.Data.ReadOnly = True
+        '
         'Catalog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
-        Me.ClientSize = New System.Drawing.Size(914, 505)
+        Me.ClientSize = New System.Drawing.Size(911, 505)
+        Me.Controls.Add(Me.TabDisplay)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Catalog"
         Me.Text = "cinecker"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.CardDisplay.ResumeLayout(False)
+        Me.CardDisplay.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        CType(Me.TabDisplay, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -213,7 +243,7 @@ Partial Class Catalog
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnCardDisp As Button
     Friend WithEvents btnTabDisp As Button
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents CardDisplay As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -221,4 +251,7 @@ Partial Class Catalog
     Friend WithEvents Label42 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents TabDisplay As DataGridView
+    Friend WithEvents Field As DataGridViewTextBoxColumn
+    Friend WithEvents Data As DataGridViewTextBoxColumn
 End Class

@@ -100,6 +100,8 @@ Partial Class Admin
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnInventory = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         CType(Me.piclsb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LocalPanel.SuspendLayout()
@@ -893,7 +895,7 @@ Partial Class Admin
         '
         Me.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnUpdate.Image = Global.OPAC1.My.Resources.Resources.update1
-        Me.btnUpdate.Location = New System.Drawing.Point(45, 304)
+        Me.btnUpdate.Location = New System.Drawing.Point(45, 311)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(171, 50)
         Me.btnUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -925,7 +927,7 @@ Partial Class Admin
         '
         Me.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnInventory.Image = Global.OPAC1.My.Resources.Resources.inventory1
-        Me.btnInventory.Location = New System.Drawing.Point(45, 360)
+        Me.btnInventory.Location = New System.Drawing.Point(45, 372)
         Me.btnInventory.Name = "btnInventory"
         Me.btnInventory.Size = New System.Drawing.Size(157, 50)
         Me.btnInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -934,12 +936,36 @@ Partial Class Admin
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(96, 474)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.ForeColor = System.Drawing.Color.Maroon
+        Me.Button1.Location = New System.Drawing.Point(84, 461)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(153, 23)
+        Me.Button1.Size = New System.Drawing.Size(80, 32)
         Me.Button1.TabIndex = 76
-        Me.Button1.Text = "Test Database Add"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.ForeColor = System.Drawing.Color.Maroon
+        Me.Button2.Location = New System.Drawing.Point(133, 461)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(80, 32)
+        Me.Button2.TabIndex = 77
+        Me.Button2.Text = "DELETE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.ForeColor = System.Drawing.Color.Maroon
+        Me.Button3.Location = New System.Drawing.Point(34, 461)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(80, 32)
+        Me.Button3.TabIndex = 78
+        Me.Button3.Text = "SAVE"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Admin
         '
@@ -947,6 +973,8 @@ Partial Class Admin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(914, 505)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnAdd)
         Me.Controls.Add(Me.PubPanel)
@@ -1062,4 +1090,6 @@ Partial Class Admin
     Friend WithEvents btnInventory As PictureBox
     Friend WithEvents BtnAdd As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

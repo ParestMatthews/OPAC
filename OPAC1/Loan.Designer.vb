@@ -45,9 +45,11 @@ Partial Class Loan
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -174,7 +176,7 @@ Partial Class Loan
         Me.btnFindL.ForeColor = System.Drawing.Color.Maroon
         Me.btnFindL.Location = New System.Drawing.Point(722, 48)
         Me.btnFindL.Name = "btnFindL"
-        Me.btnFindL.Size = New System.Drawing.Size(71, 33)
+        Me.btnFindL.Size = New System.Drawing.Size(112, 33)
         Me.btnFindL.TabIndex = 31
         Me.btnFindL.Text = "Find"
         Me.btnFindL.UseVisualStyleBackColor = False
@@ -281,12 +283,21 @@ Partial Class Loan
         Me.TextBox4.Size = New System.Drawing.Size(270, 20)
         Me.TextBox4.TabIndex = 17
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 244)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(890, 249)
+        Me.DataGridView1.TabIndex = 20
+        '
         'Loan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Maroon
         Me.ClientSize = New System.Drawing.Size(914, 505)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel3)
@@ -298,6 +309,7 @@ Partial Class Loan
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -325,4 +337,5 @@ Partial Class Loan
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents btnFindL As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

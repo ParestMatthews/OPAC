@@ -23,19 +23,10 @@ Partial Class Home
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
-        Me.btn_srchTitle = New System.Windows.Forms.Button()
-        Me.btn_srchType = New System.Windows.Forms.Button()
-        Me.btn_srchAuthor = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.comboauthor = New System.Windows.Forms.ComboBox()
-        Me.combotype = New System.Windows.Forms.ComboBox()
-        Me.combobook = New System.Windows.Forms.ComboBox()
         Me.ams = New System.Windows.Forms.Label()
         Me.lsb = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.piclsb = New System.Windows.Forms.PictureBox()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SelectUser = New System.Windows.Forms.ComboBox()
         Me.btnSave = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.PictureBox()
@@ -44,10 +35,10 @@ Partial Class Home
         Me.btnDelete = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnVerify = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.searchDataTable = New System.Windows.Forms.DataGridView()
+        Me.searchText = New System.Windows.Forms.TextBox()
         Me.Panel3.SuspendLayout()
         CType(Me.piclsb, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
         CType(Me.btnSave, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnClear, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,76 +46,8 @@ Partial Class Home
         CType(Me.btnDelete, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnVerify, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.searchDataTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btn_srchTitle
-        '
-        Me.btn_srchTitle.Location = New System.Drawing.Point(205, 101)
-        Me.btn_srchTitle.Name = "btn_srchTitle"
-        Me.btn_srchTitle.Size = New System.Drawing.Size(164, 23)
-        Me.btn_srchTitle.TabIndex = 0
-        Me.btn_srchTitle.Text = "SEARCH BY TITLE"
-        Me.btn_srchTitle.UseVisualStyleBackColor = True
-        '
-        'btn_srchType
-        '
-        Me.btn_srchType.Location = New System.Drawing.Point(463, 101)
-        Me.btn_srchType.Name = "btn_srchType"
-        Me.btn_srchType.Size = New System.Drawing.Size(164, 23)
-        Me.btn_srchType.TabIndex = 1
-        Me.btn_srchType.Text = "SEARCH BY TYPE"
-        Me.btn_srchType.UseVisualStyleBackColor = True
-        '
-        'btn_srchAuthor
-        '
-        Me.btn_srchAuthor.Location = New System.Drawing.Point(721, 101)
-        Me.btn_srchAuthor.Name = "btn_srchAuthor"
-        Me.btn_srchAuthor.Size = New System.Drawing.Size(164, 23)
-        Me.btn_srchAuthor.TabIndex = 2
-        Me.btn_srchAuthor.Text = "SEARCH BY AUTHOR"
-        Me.btn_srchAuthor.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.comboauthor)
-        Me.Panel1.Controls.Add(Me.combotype)
-        Me.Panel1.Controls.Add(Me.combobook)
-        Me.Panel1.Location = New System.Drawing.Point(205, 141)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(682, 352)
-        Me.Panel1.TabIndex = 3
-        '
-        'comboauthor
-        '
-        Me.comboauthor.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.comboauthor.FormattingEnabled = True
-        Me.comboauthor.Location = New System.Drawing.Point(6, 6)
-        Me.comboauthor.Name = "comboauthor"
-        Me.comboauthor.Size = New System.Drawing.Size(382, 21)
-        Me.comboauthor.TabIndex = 24
-        Me.comboauthor.Text = "Search the author of the book"
-        '
-        'combotype
-        '
-        Me.combotype.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.combotype.FormattingEnabled = True
-        Me.combotype.Location = New System.Drawing.Point(6, 6)
-        Me.combotype.Name = "combotype"
-        Me.combotype.Size = New System.Drawing.Size(382, 21)
-        Me.combotype.TabIndex = 23
-        Me.combotype.Text = "Search the type of the book"
-        '
-        'combobook
-        '
-        Me.combobook.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.combobook.FormattingEnabled = True
-        Me.combobook.Location = New System.Drawing.Point(6, 6)
-        Me.combobook.Name = "combobook"
-        Me.combobook.Size = New System.Drawing.Size(382, 21)
-        Me.combobook.TabIndex = 1
-        Me.combobook.Text = "Search the title of the book"
         '
         'ams
         '
@@ -173,22 +96,6 @@ Partial Class Home
         Me.piclsb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.piclsb.TabIndex = 12
         Me.piclsb.TabStop = False
-        '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(663, 0)
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(17, 315)
-        Me.VScrollBar1.TabIndex = 0
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Panel2.Controls.Add(Me.VScrollBar1)
-        Me.Panel2.Location = New System.Drawing.Point(205, 176)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(682, 317)
-        Me.Panel2.TabIndex = 4
         '
         'SelectUser
         '
@@ -269,12 +176,43 @@ Partial Class Home
         Me.btnVerify.TabIndex = 24
         Me.btnVerify.TabStop = False
         '
+        'searchDataTable
+        '
+        Me.searchDataTable.AllowUserToAddRows = False
+        Me.searchDataTable.AllowUserToDeleteRows = False
+        Me.searchDataTable.AllowUserToResizeColumns = False
+        Me.searchDataTable.AllowUserToResizeRows = False
+        Me.searchDataTable.BackgroundColor = System.Drawing.Color.PaleGoldenrod
+        Me.searchDataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.searchDataTable.ColumnHeadersHeight = 29
+        Me.searchDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.searchDataTable.Location = New System.Drawing.Point(213, 132)
+        Me.searchDataTable.MultiSelect = False
+        Me.searchDataTable.Name = "searchDataTable"
+        Me.searchDataTable.ReadOnly = True
+        Me.searchDataTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.searchDataTable.RowHeadersVisible = False
+        Me.searchDataTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.searchDataTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.searchDataTable.Size = New System.Drawing.Size(689, 361)
+        Me.searchDataTable.StandardTab = True
+        Me.searchDataTable.TabIndex = 25
+        '
+        'searchText
+        '
+        Me.searchText.Location = New System.Drawing.Point(213, 106)
+        Me.searchText.Name = "searchText"
+        Me.searchText.Size = New System.Drawing.Size(332, 20)
+        Me.searchText.TabIndex = 26
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Khaki
         Me.ClientSize = New System.Drawing.Size(914, 505)
+        Me.Controls.Add(Me.searchText)
+        Me.Controls.Add(Me.searchDataTable)
         Me.Controls.Add(Me.btnVerify)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.SelectUser)
@@ -284,18 +222,11 @@ Partial Class Home
         Me.Controls.Add(Me.btnPrint)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btn_srchAuthor)
-        Me.Controls.Add(Me.btn_srchType)
-        Me.Controls.Add(Me.btn_srchTitle)
         Me.Name = "Home"
         Me.Text = "OPAC"
-        Me.Panel1.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.piclsb, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
         CType(Me.btnSave, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnClear, System.ComponentModel.ISupportInitialize).EndInit()
@@ -303,15 +234,11 @@ Partial Class Home
         CType(Me.btnDelete, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnVerify, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.searchDataTable, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btn_srchTitle As Button
-    Friend WithEvents btn_srchType As Button
-    Friend WithEvents btn_srchAuthor As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents combobook As ComboBox
     Friend WithEvents ams As Label
     Friend WithEvents lsb As Label
     Friend WithEvents piclsb As PictureBox
@@ -321,11 +248,9 @@ Partial Class Home
     Friend WithEvents btnDelete As PictureBox
     Friend WithEvents btnPrint As PictureBox
     Friend WithEvents btnSave As PictureBox
-    Friend WithEvents VScrollBar1 As VScrollBar
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents SelectUser As ComboBox
-    Friend WithEvents combotype As ComboBox
-    Friend WithEvents comboauthor As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnVerify As PictureBox
+    Friend WithEvents searchDataTable As DataGridView
+    Friend WithEvents searchText As TextBox
 End Class

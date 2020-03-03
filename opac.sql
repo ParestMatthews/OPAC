@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 28, 2020 at 03:24 AM
+-- Generation Time: Mar 03, 2020 at 03:58 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -63,8 +63,9 @@ CREATE TABLE `book` (
 --
 
 INSERT INTO `book` (`bookCallNumber`, `bookTitle`, `bookAuthor`, `bookLocation`, `bookPublished`, `bookISBN`, `bookEdition`, `bookLanguage`, `bookAccession`) VALUES
-('', '', '', '', '', '', '', '', ''),
-('XXXXXXXXXXXXXXXXXX', 'DA BOOK', 'MEEEEEE', 'HERENBFG', 'YOUR HOUSE', '', 'EDITION ZERO', 'ASDSADASF', 'GODSDSDA');
+('', 'Book Number Ten', 'Maho Hiyajo', '', '', '', '', '', 'Book Accesion Example Ten'),
+('123', 'Book Name Two', 'John Titor', '', '', '', '', '', 'Book Accesion Example Two'),
+('XXXXXXXXXXXXXXXXXX', 'Book Number One', 'Okabe Rintaro', 'HERENBFG', 'YOUR HOUSE', '', 'EDITION ZERO', 'ASDSADASF', 'Book Accesion Example One');
 
 -- --------------------------------------------------------
 

@@ -1,29 +1,51 @@
-﻿Public Class Home
-    Private Sub btn_srchTitle_Click(sender As Object, e As EventArgs) Handles btn_srchTitle.Click
-
-
-
-
-
-
-        combotype.Hide()
-        comboauthor.Hide()
-        combobook.Show()
-
-
+﻿Imports System.Runtime.InteropServices
+Imports MySql.Data.MySqlClient
+Public Class Home
+    Dim dbQuery As String
+    Dim dbConn As MySqlConnection
+    Dim dbCommand As MySqlCommand
+    Dim dbReader As MySqlDataReader
+    Private Sub btn_srchTitle_Click(sender As Object, e As EventArgs)
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Panel1.Show()
-        combobook.Hide()
-        combotype.Hide()
-        comboauthor.Hide()
+        SetCueText(searchText, "Search Book by Name, Call Number, or Author")
+        dbConn = New MySqlConnection("Data source=localhost;user id=root;database=opac")
+        Try
+            dbConn.Open()
+            dbQuery = "
+                 SELECT 
+                   bookTitle,
+                   bookAccession
+                 FROM
+                   opac.book
+                "
+            Dim dbTable As New DataTable
+            Dim dbAdapter As New MySqlDataAdapter
+            Dim bindSource As New BindingSource
+            dbCommand = New MySqlCommand(dbQuery, dbConn)
+            dbAdapter.SelectCommand = dbCommand
+            dbAdapter.Fill(dbTable)
+            bindSource.DataSource = dbTable
+            searchDataTable.DataSource = bindSource
+            With searchDataTable
+                .Columns(0).HeaderCell.Value = "Book Name"
+                .Columns(1).HeaderCell.Value = "Book Accession"
+                .Columns(0).Width = Me.Width / 2
+                .Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                .Columns(0).HeaderCell.Style.Font = New Font(searchDataTable.Font, FontStyle.Bold)
+                .Columns(1).HeaderCell.Style.Font = New Font(searchDataTable.Font, FontStyle.Bold)
+            End With
+            dbAdapter.Update(dbTable)
+            dbConn.Close()
 
-
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs)
@@ -113,17 +135,12 @@
 
     End Sub
 
-    Private Sub btn_srchType_Click(sender As Object, e As EventArgs) Handles btn_srchType.Click
-        combobook.Hide()
-        comboauthor.Hide()
-        combotype.Show()
+    Private Sub btn_srchType_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub btn_srchAuthor_Click(sender As Object, e As EventArgs) Handles btn_srchAuthor.Click
-        combobook.Hide()
-        combotype.Hide()
-        comboauthor.Show()
+    Private Sub btn_srchAuthor_Click(sender As Object, e As EventArgs)
+
 
 
     End Sub
@@ -131,4 +148,59 @@
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles searchDataTable.CellContentClick
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles searchText.TextChanged
+        Try
+            dbConn.Open()
+            dbQuery = "
+                 SELECT 
+                   bookTitle,
+                   bookAccession
+                 FROM
+                   opac.book
+                 WHERE
+                   bookTitle LIKE @title or
+                   bookAuthor LIKE @author or
+                   bookCallNumber LIKE @callnumber
+                "
+            Dim dbTable As New DataTable
+            Dim dbAdapter As New MySqlDataAdapter
+            Dim bindSource As New BindingSource
+            dbCommand = New MySqlCommand(dbQuery, dbConn)
+            dbCommand.Parameters.AddWithValue("@title", "%" & searchText.Text & "%")
+            dbCommand.Parameters.AddWithValue("@author", "%" & searchText.Text & "%")
+            dbCommand.Parameters.AddWithValue("@callnumber", "%" & searchText.Text & "%")
+            dbAdapter.SelectCommand = dbCommand
+            dbAdapter.Fill(dbTable)
+            bindSource.DataSource = dbTable
+            searchDataTable.DataSource = bindSource
+
+            dbAdapter.Update(dbTable)
+            dbConn.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class
+Public Module CueBannerText
+    <DllImport("user32.dll", CharSet:=CharSet.Auto)>
+    Private Function SendMessage(ByVal hWnd As IntPtr, ByVal msg As Integer, ByVal wParam As Integer, <MarshalAs(UnmanagedType.LPWStr)> ByVal lParam As String) As Int32
+    End Function
+    Private Declare Function FindWindowEx Lib "user32" Alias "FindWindowExA" (ByVal hWnd1 As IntPtr, ByVal hWnd2 As IntPtr, ByVal lpsz1 As String, ByVal lpsz2 As String) As IntPtr
+    Private Const EM_SETCUEBANNER As Integer = &H1501
+
+    Public Sub SetCueText(ByVal cntrl As Control, ByVal text As String)
+        If TypeOf cntrl Is ComboBox Then
+            Dim Edit_hWnd As IntPtr = FindWindowEx(cntrl.Handle, IntPtr.Zero, "Edit", Nothing)
+            If Not Edit_hWnd = IntPtr.Zero Then
+                SendMessage(Edit_hWnd, EM_SETCUEBANNER, 0, text)
+            End If
+        ElseIf TypeOf cntrl Is TextBox Then
+            SendMessage(cntrl.Handle, EM_SETCUEBANNER, 0, text)
+        End If
+    End Sub
+End Module

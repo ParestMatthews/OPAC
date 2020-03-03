@@ -30,6 +30,9 @@ Public Class Admin
         btnPrev.Hide()
         btnPrev.Enabled = False
 
+        Button1.Hide()
+        Button2.Hide()
+        Button3.Hide()
 
 
     End Sub
@@ -45,6 +48,11 @@ Public Class Admin
         btnNext.Enabled = True
         btnPrev.Enabled = False
         crudStatus = "update" 'update flag
+
+        Button1.Hide()
+        Button2.Show()
+        Button3.Show()
+
     End Sub
     Private Sub btnUpdate_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnUpdate.MouseHover
         btnUpdate.Image = New Bitmap(My.Resources.update2)
@@ -127,6 +135,11 @@ Public Class Admin
         btnPrev.Enabled = False
 
         crudStatus = "Add" 'add flag
+
+        Button1.Show()
+        Button2.Hide()
+        Button3.Hide()
+
     End Sub
 
     Private Sub BtnAdd_MouseHover(sender As Object, e As EventArgs) Handles BtnAdd.MouseHover
@@ -193,6 +206,14 @@ Public Class Admin
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
+
+    End Sub
+
+    Private Sub LocalPanel_Paint_1(sender As Object, e As PaintEventArgs) Handles LocalPanel.Paint
 
     End Sub
 End Class
